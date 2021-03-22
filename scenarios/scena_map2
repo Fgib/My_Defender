@@ -1,0 +1,6 @@
+La revanche des mites
+maps/foret_noire
+scenarios/data.turrets
+3000
+0:200:65:2:1:assets/pics/biter-all.png:assets/pics/black.png|0:100:50:3:2:assets/pics/biter-all.png:assets/pics/black.png|0:30:25:6:3:assets/pics/biter-all.png:assets/pics/black.png|0:500:90:6:500:assets/pics/biter-all.png:assets/pics/black.png
+1;0:5;1:10;2:5|0;0:10;1:10;2:10;0:3
