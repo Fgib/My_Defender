@@ -19,12 +19,12 @@ void draw_end_menu(gen_t *prm)
     prm->end_menu->restart->sprite, NULL);
     sfRenderWindow_drawText(prm->window, prm->end_menu->restart->text, NULL);
     if (prm->game_step == GAME_OVER) {
-        sfText_setPosition(prm->end_menu->condition, get_vector(400, 400));
+        sfText_setPosition(prm->end_menu->condition, get_vector(700, 400));
         sfText_setString(prm->end_menu->condition, "You Loose !");
     }
     if (prm->game_step == GAME_WIN) {
 
-        sfText_setPosition(prm->end_menu->condition, get_vector(450, 400));
+        sfText_setPosition(prm->end_menu->condition, get_vector(750, 400));
         sfText_setString(prm->end_menu->condition, "You Won !");
     }
     sfRenderWindow_drawText(prm->window, prm->end_menu->condition, NULL);

@@ -43,6 +43,7 @@ void setup_values(game_t *temp)
     temp->life = 10000;
     temp->turret_id = 0;
     temp->ennemy_id = 0;
+    temp->wave_status = 1;
     temp->max_life = 10000;
     temp->turrets_count = 0;
     temp->ennemies_count = 0;

@@ -39,6 +39,7 @@ gen_t *get_struct_settings(void)
     prm->keys = load_keys();
     prm->texture_count = 6;
     prm->end_menu = load_end_menu();
+    prm->about_menu = load_about_menu();
 
     prm->camera = sfView_createFromRect((sfFloatRect){0, 0, 1920, 1080});
     prm->player = sfView_createFromRect((sfFloatRect){0, 0, 1920, 1080});

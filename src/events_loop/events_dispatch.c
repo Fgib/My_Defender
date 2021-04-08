@@ -17,6 +17,8 @@ void manage_event2(gen_t *prm)
         game_settings_menu_event(prm);
     if (prm->game_step == GAME_WIN || prm->game_step == GAME_OVER)
         event_end_menu(prm);
+    if (prm->game_step == ABOUT)
+        event_about_menu(prm);
 }
 
 void manage_events(gen_t *prm)

@@ -45,7 +45,6 @@ void draw_settings_keys(gen_t *prm)
     prm->setti_menu->go_down->sprite, NULL);
     sfRenderWindow_drawSprite(prm->window,
     prm->setti_menu->go_left->sprite, NULL);
-
     sfRenderWindow_drawText(prm->window,
     prm->setti_menu->go_up->text, NULL);
     sfRenderWindow_drawText(prm->window,
@@ -54,5 +53,6 @@ void draw_settings_keys(gen_t *prm)
     prm->setti_menu->go_down->text, NULL);
     sfRenderWindow_drawText(prm->window,
     prm->setti_menu->go_left->text, NULL);
+    draw_settings_keys_bis(prm);
 }
 

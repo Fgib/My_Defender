@@ -11,6 +11,8 @@ void window_update(gen_t *prm)
 {
     if (prm->game_step == HOME)
         draw_start_menu(prm);
+    if (prm->game_step == ABOUT)
+        draw_about_menu(prm);
     if (prm->game_step == SETTINGS)
         draw_settings(prm);
     if (prm->game_step == EDITOR_MENU)

@@ -15,7 +15,7 @@ void start_menu_event(gen_t *prm)
         prm->event.key.code == sfKeyEscape)
         prm->game_step = OUT;
     if (triforce(prm->event, prm->start_menu->abot_b, prm->sound->btn_press))
-        write(1, "About\n", 6);
+        prm->game_step = ABOUT;
     if (triforce(prm->event, prm->start_menu->edit_b, prm->sound->btn_press)) {
         get_maps(prm, prm->start_menu);
         prm->edit_menu = get_edit_s(prm);

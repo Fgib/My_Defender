@@ -9,10 +9,10 @@
 
 void spawn_ennemies(gen_t *prm)
 {
-    int rate = 25;
+    int rate = 20;
     int random = random_gen(0, 1000);
 
     if (random <= rate && prm->game_eng->trig == 1) {
-        exec_wave(prm->game_eng);
+        prm->game_eng->wave_status = exec_wave(prm->game_eng);
     }
 }

@@ -57,7 +57,7 @@ void turret_selector(gen_t *prm)
 
 int has_win(game_t *eng)
 {
-    if (exec_wave(eng))
+    if (eng->wave_status)
         return 0;
     for (int i = 0; i < eng->ennemies_count; ++i)
         if (eng->ennemies[i].health > 0)

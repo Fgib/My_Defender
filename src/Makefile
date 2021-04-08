@@ -52,11 +52,12 @@ SRC		=	main.c\
 			utils/string_stuff.c\
 			utils/math_vectors.c\
 			free/game.c\
+			events_loop/events_about.c\
 			events_loop/events_dispatch.c\
-			events_loop/events_game_eng2.c\
 			events_loop/events_game_eng.c\
 			events_loop/events_selector.c\
 			events_loop/events_end_menu.c\
+			events_loop/events_game_eng2.c\
 			events_loop/events_pause_menu.c\
 			events_loop/events_start_menu.c\
 			events_loop/events_editor_eng.c\
@@ -69,6 +70,7 @@ SRC		=	main.c\
 			turrets/movements.c\
 			turrets/constructor1.c\
 			turrets/constructor2.c\
+			drawer/draw_about.c\
 			drawer/draw_game1.c\
 			drawer/draw_game2.c\
 			drawer/draw_menu.c\
@@ -84,6 +86,7 @@ SRC		=	main.c\
 			load_structs/load_menu.c\
 			load_structs/load_keys.c\
 			drawer/draw_editor_menu.c\
+			load_structs/load_about.c\
 			load_structs/load_game1.c\
 			load_structs/load_game2.c\
 			load_structs/load_pause.c\

@@ -10,8 +10,8 @@
 void load_end_menu_bis(end_menu_t *temp)
 {
     temp->transp = initialize_button(785, 530, 0, 0);
-    temp->home = initialize_button(804, 542, 156, 156);
-    temp->restart = initialize_button(804, 638, 156, 156);
+    temp->home = initialize_button(804, 542, 312, 94);
+    temp->restart = initialize_button(804, 638, 312, 94);
     temp->transp->sprite = get_sprite("assets/pics/tri_button.png");
     temp->home->sprite = get_sprite("assets/pics/tri_button.png");
     temp->restart->sprite = get_sprite("assets/pics/tri_button.png");

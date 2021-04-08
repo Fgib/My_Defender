@@ -137,6 +137,7 @@ enum setting_step {
 
 enum win_step {
     HOME,
+    ABOUT,
     SETTINGS,
     SELECTOR,
     EDITOR_MENU,
@@ -304,6 +305,13 @@ typedef struct setti_menu {
     enum setting_step set_step;
 } setti_menu_t;
 
+typedef struct about_menu {
+    sfSprite *background;
+    struct button *transp;
+    struct button *exit;
+    sfText *text;
+} about_menu_t;
+
 typedef struct gen {
     keys_t keys;
     keymap_t *keymap;
@@ -323,6 +331,7 @@ typedef struct gen {
     enum win_step game_step;
     sfClock *animation_clock;
     end_menu_t *end_menu;
+    about_menu_t *about_menu;
     start_menu_t *start_menu;
     setti_menu_t *setti_menu;
     selec_menu_t *selec_menu;
@@ -378,6 +387,7 @@ typedef struct game {
     ennemy_t *ennemies;
     enum in_game_state igs;
     int ennemies_count;
+    int wave_status;
     int turret_id;
     int ennemy_id;
     int gear;
