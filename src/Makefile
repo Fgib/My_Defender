@@ -126,15 +126,14 @@ all: do
 
 do:	$(OBJ)
 	$(DEBUG) gcc -o $(NAME) $(OBJ) $(CSFMLFLAGS) $(CFLAGS) -g3
-	$(DEBUG) make $(DEBUG_FLAG) clean
 	$(DEBUG) mv $(NAME) ../
 
 clean:
 	$(DEBUG) rm -rf $(OBJ)
 	$(DEBUG) rm -rf *.vgcore*
-	$(DEBUG) rm -rf ../$(NAME)
 
 fclean:	clean
 	$(DEBUG) rm -rf $(NAME)
+	$(DEBUG) rm -rf ../$(NAME)
 
 re:	fclean all
