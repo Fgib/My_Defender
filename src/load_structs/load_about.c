@@ -16,9 +16,9 @@ void load_about_menu_text(about_menu_t *temp)
     sfText_setFont(temp->text, font);
     sfText_setCharacterSize(temp->text, 15);
     sfText_setString(temp->text, "A game realised by Leo Brossard \nand"
-    " Florian Gibault in first year \nat Epitech.\n\nThis project was "
+    " Florian Gibault in first year \nat Epitech Lyon.\n\nThis project was "
     "completed using \nFactorio's spritesheets, thanks to \nKovarex "
-    "team and Wube Softaware\n");
+    "team and Wube Software\n");
 }
 
 about_menu_t *load_about_menu(void)
